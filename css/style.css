@@ -1,0 +1,299 @@
+/* General Styles */
+* {
+   background: url(../images/bg_img.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Gupter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Logo */
+  .logo img {
+    max-width: 100px;
+    margin-right: 100px;
+  }
+  
+  /* Banners & Categories */
+  .sale-banner img, .category img {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Perks & Footer Icons */
+  .perks img, .footer-icons img {
+    height: 100px; /* Updated */
+    width: 100px;  /* Updated */
+    object-fit: cover; /* Ensures images cover the dimensions without distortion */
+  }
+  
+  /* Search Container */
+  .search-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px; /* Corrected */
+  }
+  .search-container input {
+    max-width: 100%; /* Set a maximum width */
+    padding-right: 40px;
+    border-color: black; /* Corrected */
+  }
+  
+  /* Form Container */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Location & Contact */
+  .location, .contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Item */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .contact-item img {
+    height: 10px; /* Updated */
+    width: 100px;  /* Updated */
+    object-fit: cover; /* Ensures images cover the dimensions without distortion */
+    margin-left: 10px;
+  }
+  
+  /* Map */
+#map{
+    height: 10px;
+    width: 10px;
+}
+  
+  .team h2{
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  /* Team Member */
+  .team-member img {
+    border-radius: 50%;
+    height: 100px; /* Updated */
+    width: 100px;  /* Updated */
+    object-fit: cover; /* Ensures images cover the dimensions without distortion */
+    align-items: center;
+  }
+  
+  /* Navigation Container */
+  .nav-container {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center;
+  }
+  .nav-item img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+  }
+  .nav-item {
+    margin-bottom: 10px; /* Add some space between items */
+  }
+  
+  /* Search Container Icon */
+  .search-container i {
+    position: absolute;
+    left: 180px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    background: transparent;
+  }
+  
+  /* Center Class */
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Form Group Row */
+  .form-group.row {
+    display: flex;
+    align-items: center;
+  }
+  .form-group.row label {
+    margin-bottom: 0;
+  }
+  
+  /* Row Images */
+  .row img {
+    height: 200px;
+    width: auto;
+  }
+  
+  .input-black-border {
+    border: 1px solid black;
+    border-radius: 4px; /* Optional: Adds slight rounding to the corners */
+  }
+  
+  .input-black-border:focus {
+    border-color: black; /* Keeps the border black on focus */
+    box-shadow: none; /* Removes the default Bootstrap focus shadow */
+    outline: none; /* Removes the default outline */
+  }
+  
+  /* Footer Icons */
+  .footer-icons img {
+    height: 100px; /* Updated */
+    width: 100px;  /* Updated */
+    object-fit: cover; /* Ensures images cover the dimensions without distortion */
+    margin-right: 0;
+  }
+  
+   #map{
+    height: 100px;
+    width: auto;
+  }
+  #pin{
+    height: 30px;
+    width: auto;
+  }
+  
+  #phone,#email{
+    height: 50px;
+    width: auto;
+  }
+  
+  /* CSS */
+  .icon-black {
+    color: black; /* Set icon color to black */
+  }
+  
+  .footer-icons a {
+    display: inline-block; /* Ensure the link wraps around the icon */
+    background: transparent; /* Set the background to transparent */
+    padding: 10px; /* Optional: adds space around the icon */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .footer-icons i {
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transitions */
+  }
+  
+  .footer-icons a:hover,
+  .footer-icons a:focus {
+    background-color: rgba(0, 0, 0, 0.1); /* Change to your desired hover/focus background color with transparency */
+    color: #007bff; /* Change to your desired hover/focus color */
+    transform: scale(1.1); /* Slightly enlarge the icon */
+  }
+  
+  .footer-icons a:focus {
+    outline: none; /* Remove default focus outline if you want a custom style */
+  }
+  
+  .team-photo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  }
+  
+  .team-photo:hover,
+  .team-photo:focus {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  }
+  
+  /* Ensure the images are focusable (for accessibility) */
+  .team-photo:focus {
+    outline: 2px solid #007bff; /* Add a focus outline (customize color) */
+    outline-offset: 2px; /* Space between the image and the outline */
+  }
+  
+  .copyright-text {
+    font-weight: bold; /* Makes the text bold */
+  }
+  .team-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+    gap: 10px; /* Space between items */
+    justify-content: center; /* Centers items in the container */
+  }
+  
+  .team-item {
+    flex: 1 1 calc(33.333% - 10px); /* 3 items per row on desktop, minus gap */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content inside each item */
+    max-width: 200px; /* Sets maximum width for each item */
+  }
+  
+  .team-item img {
+    width: 150px; /* Fixed width for images */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 50%; /* Makes the image circular */
+  }
+  
+  @media (max-width: 1024px) { /* Adjust this breakpoint for tablets if needed */
+    .team-item {
+        flex: 1 1 calc(50% - 10px); /* 2 items per row on tablets, minus gap */
+    }
+  
+    .team-item:nth-child(3) {
+        flex: 1 1 100%; /* Makes the third item take the full width */
+        text-align: center; /* Centers the text under the image */
+    }
+  }
+  
+  @media (max-width: 767px) { /* Mobile devices */
+    .team-item {
+        flex: 1 1 calc(50% - 10px); /* 2 items per row on mobile, minus gap */
+    }
+  
+    .team-item:nth-child(3) {
+        flex: 1 1 100%; /* Makes the third item take the full width */
+        text-align: center; /* Centers the text under the image */
+    }
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically if needed */
+  }
+  
+  .footer-links p {
+    margin: 0; /* Removes default margin on the paragraph */
+  }
+  
+  .footer-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: #000; /* Ensures the text color is dark (adjust as needed) */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Adds underline on hover for better UX */
+  }
+  
+  .center{
+    text-align: center;
+  }
+  
+  .btn-custom {
+    background-color: #3498db; /* Initial background color */
+    color: black;/* Initial text color */
+    font-weight: 700;
+    border: 1px solid black; /* Border color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
